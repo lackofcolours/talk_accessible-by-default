@@ -14,7 +14,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 :root {
   --r-background-color: #181E2B;
   --r-main-font: Source Sans Pro, Helvetica, sans-serif;
-  --r-main-font-size: 58px;
+  --r-main-font-size: 54px;
   --r-main-color: #F1FEFB;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
@@ -27,7 +27,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-heading-font-weight: 600;
   --r-heading1-text-shadow: none;
   --r-heading1-size: 1.8em;
-  --r-heading2-size: 2em;
+  --r-heading2-size: 1.8em;
   --r-heading3-size: 1.4em;
   --r-heading4-size: 1.2em;
   --r-code-font: monospace;
@@ -371,4 +371,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 .reveal .code-wrapper code {
   overflow-x: hidden;
+}
+.reveal .muted {
+  opacity: 0.25;
 }

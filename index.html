@@ -59,7 +59,7 @@
 									<li>400% zoom user</li>
 									<li>braille display user</li>
 									<li>Windows high contrast mode user</li>
-									<li>or others, use your featur</li>
+									<li>or others, use your feature</li>
 								</ul>
 							</li>
 						</ol>
@@ -89,7 +89,7 @@
 
 				<section>
 					<h2>⚠️ Disclaimer</h2>
-					
+
 					<p>These are my personal views and I’m still learning</p>
 
 					<aside class="notes">
@@ -315,7 +315,7 @@
 					</pre>
 					
 					<p span class="fragment" data-fragment-index="1">
-						<strong>Did you just disable somone?</strong></br>
+						<strong>Did you just disable someone?</strong></br>
 						Check your HTML output
 					</p>
 
@@ -354,28 +354,602 @@
 				</section>
 
 				<section>
-					<h2>lots of fragment</h2>
+					<h2>WCAG<br>POUR principles</h2>
 
-					<ul>
-						<li class="fragment">Ask</li>
-						<li class="fragment" data-fragment-index="2">Align test session with appropriate dev</li>
-						<li class="fragment" data-fragment-index="3">Roster devs</li>
-						<li class="fragment" data-fragment-index="4">Turn them into observers and/or note taker</li>
-						<li class="fragment" data-fragment-index="5">Share findings with the team</li>
-					</ul>
+					<p>Perceivable, Operable, Understandable, and Robust</p>
 
 					<aside class="notes">
-						<p>A lot of what I taked about means double budget (dev + design) early, which pays off</p>
-						<p>Some devs, especially BEDs, see no point in this. FEDs are often on board</p>
-						<p>When companies first try, they make devs sit in every testing session, both user and usability test. Pointless, deminishing return</p>
-						<p>Data heavy prototype, get devs to sit in first session, fix, and followup</p>
-						<p>Final synthesised findings give devs idea of how decisions are reached, important to them and not</p>
+						<p>Web Content Accessibility Guidelines (WCAG)</p>
+						<p>The guideline is true to its 4 core principles. POUR</p>
+						<ul>
+							<li>Perceivable information and user interface, text and text alternative content, etc.</li>
+							<li>Operable user interface and navigation, can be easily navigated using multiple types of input device. Mouse, Keyboard, voice, etc.</li>
+							<li>Understandable information and user interface, clear and predictable</li>
+							<li>Robust content and reliable interpretation by assistive tech and future tools</li>
+						</ul>
+						<p>These principles translate into almost 50 individual success criteria - checklists by W3C that measure how accessible your content is. </p>
+						<p>The guidelines also come in different versions, like WCAG 2.0, 2.1, 2.2 and the upcoming 3.0. You can also meet different levels of conformance in the guide, like A (minimal), AA (acceptable), and AAA (Optimal experience).</p>
+						<p>Alright, so now that we kinda know what web accessibility, and how to test if we’re accessible...</p>
 					</aside>
 				</section>
 
 				<section>
-					<h2>Thanks!</h2>
-					<p>Questions?</p>
+					<h2>How to make an accessible web product?</h2>
+
+					<aside class="notes">
+						<p>For those of you who already knew the why and the who behind digital accessibility… I bet you were bored to tears while I was going over the history just then. Your main reason to be here would probably be </p>
+						<p><strong>“how do I go about making my product accessible?”</strong></p>
+						<p>I will now ease on the history and lectures. We’re getting practical.</p>
+						<p>I know we all like clearly laid out instructions/steps, so here're some</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Focus areas</h2>
+
+					<p>
+						Buy-in, audit, requirements gathering, screen reader training, design and content, test and development, usability testing
+					</p>
+
+					<aside class="notes">
+						<p>Let’s take the scenario I mentioned earlier. </p>
+						<p>Your team had mixed reactions when being told to make your product accessible in 12 months. </p>
+						<p>Here are my recommended focus areas:</p>
+						<ul>
+							<li>Buy-in / groundworks</li>
+							<li>Exploratory audit</li>
+							<li>Requirements / user stories</li>
+							<li>Screen reader training</li>
+							<li>Design and content</li>
+							<li>Test and development</li>
+							<li>Verification via usability testing and/or audit</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>1. Buy-in</h2>
+
+					<ul>
+						<li>Accessibility 101s</li>
+						<li class="muted">User stories</li>
+						<li class="muted">Empathy workshop</li>
+					</ul>
+
+					<aside class="notes">
+						<p>If you’ve tried to get buy-in for anything, you know it’s hard to rely on one talk, </p>
+						<p>or one presentation to change hearts and minds. Especially with foriegn concepts like accessibility.</p>
+						<p>If you were in that hypothetical 12 months scenario, people might buy into the timeline; by force of course. But that’s a stick, where’s the carrot? </p>
+						<p>We all know that for persistent behavioural change, incentives work much better than a stick. </p>
+						<p>How do we make people want to make an accessible product?</p>
+						<p>I’ve found that you’ll need different types of presentations or workshops with the same underlying message, at a consistent interval over a period of time. </p>
+						<p>Expect this to take at least 2 months.</p>
+						<p>Here are a few suggestions...</p>
+						<p><strong>Accessibility 101s</strong></p>
+						<p>Similar to what I’ve done in the first part of this talk. </p>
+						<p>You need to explain who, what, why, how of accessibility and testing to give them a general idea of the concept. </p>
+						<p>But beware! </p>
+						<p>These won’t be the session that gets the conversation going. It’s the bare minimum why groundwork. </p>
+						<p>And no, try not to do what I’m doing, and force people to sit for 45mins to listen to an intro to accessibility. </p>
+						<p>I can do that because you’ve willingly signed up to watch this talk. </p>
+						<p>If you’re presenting it at your team’s ceremonies like a show n tell, which is usually short, split up the content. </p>
+						<p>Drip feed it… be patient my friends.</p>
+						<p>People will come out of these sessions with a similar reaction to a presentation on why inequality exists.</p>
+						<p>They may feel curious, or even sad, but still don’t feel like they can or would do anything about it. </p>
+						<p>That’s fine, you’re building awareness.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>1. Buy-in</h2>
+
+					<ul>
+						<li>Accessibility 101s</li>
+						<li>User stories</li>
+						<li class="muted">Empathy workshop</li>
+					</ul>
+
+					<aside class="notes">
+						<p>User stories</p>
+						<p>These are a little bit more interesting. </p>
+						<p>The goal is to move from the why behind accessibility, to who are the access needs users. </p>
+						<p>Our goal for these sessions is to highlight their web content consumption strategies. </p>
+						<p>When the makers know how consumers consume their stuff, they start to design with those users in mind.</p>
+						<p>There are a lot of videos online which show different access needs for users like </p>
+						<p>a deaf person watching a video transcript, </p>
+						<p>a low vision user using high contrast mode to read an article, </p>
+						<p>or a dixlexic user encountering a huge wall of text and switching to a screen reader instead.</p>
+						<p>After watching each of these videos, open the floor up to discussions. </p>
+						<p>Based on different types of users, match it with your current users profile, and discuss what they may use to access your product?</p>
+						<p>Someone in your team is bound to know someone who’s disabled by inconsiderate designs. </p>
+						<p>Hopefully, your team’s culture is safe enough for people to share these experiences. If they do, it can be quite powerful.</p>
+						<p>At these sessions, you would have created empathy for more clearly defined types of users. </p>
+						<p>So at this point, hopefully you can steer the conversation around the ‘how’ to designing, coding and testing with these needs in mind. </p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>1. Buy-in</h2>
+
+					<ul>
+						<li>Accessibility 101s</li>
+						<li>User stories</li>
+						<li>Empathy workshop</li>
+					</ul>
+
+					<aside class="notes">
+						<p>Empathy workshop and/or usability testing</p>
+						<p>I personally love these.</p>
+						<p>Fork out the money. </p>
+						<p>Pay advocates and different types of access need users to come into the office with their personal devices, and talk to your team about how they use them to consume the web, or better, your product.</p>
+						<p>Nothing spur action like seeing customers struggle with your feature. </p>
+						<p>My UX friends are nodding. It’s something most of them have probably advocated for a long time.</p>
+						<p>All the theoretical ground works you’ve done up until this point will become much more meaningful. Because after this workshop, your teammates will finally ‘get it’. </p>
+						<p>You will most likely gain a few more strong advocates in your team, hopefully with different roles. </p>
+						<p>Form a pack and work with them closely over the next few stages. </p>
+						<p>It takes more than 2 people to create momentum.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>2. Audit</h2>
+
+					<p><strong>internal</strong> vs <strong>external</strong></p>
+
+					<aside class="notes">
+						<p>Next focus, let’s look at exploratory audit.</p>
+						<p>Like when you’re creating a pattern library or clearing out your closet, </p>
+						<p>you need to take stock of the current situation. </p>
+						<p>For accessibility, you do that via an audit. There are 2 options:</p>
+						<p>Internal audit and External audit</p>
+						<p>So, which one? Ask </p>
+						<p><strong>“Why did we embark upon the accessibility journey?”</strong></p>
+						<p>Was it from <strong>internal drive</strong>, </p>
+						<p>such as someone passionate from the team, </p>
+						<p>or upper management mandate? </p>
+						<p>Then Internal audit. </p>
+						<p>It’s also a good way to train people to read those legal like WCAG requirements.</p>
+						<p>That’s when you’d go with an internal audit/</p>
+						<p>Or was it <strong>external pressure</strong> to meet NZ’s legal requirement for Government agencies, </p>
+						<p>and would like to be certified? </p>
+						<p>Then definitely needs an external/3rd party to provide the report. </p>
+						<p>Also, if your team or company lacks in-house capability and time, this would be a way to go.</p>
+						<p>Regardless of your reason, external audits are always useful. </p>
+						<p>They provide an impartial insight into your product. </p>
+						<p>And usually, those 3rd parties are experts or real users.</p>
+						<p>So try to get that if you have the budget.</p>
+						<p><strong>Expect this to take anywhere between 2 weeks to 1 month.</strong></p>
+						<p>Can be done at the same time as buy-in</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>2. Audit - What?</h2>
+
+					<ul>
+						<li>Highest traffic templates</li>
+						<li>Core user journeys</li>
+						<li>Critical components</li>
+					</ul>
+
+					<aside class="notes">
+						<p>Alright, what’s involved?</p>
+						<p>Back to closet tidying strategy, look at your product. Determine your test coverage.</p>
+						<p>Make a selection of templates </p>
+						<p>for pages which represent your product’s user journeys, </p>
+						<p>or most used functionalities. </p>
+						<p>These are the stuff you want to audit</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>2. Audit - Automated</h2>
+
+					<ul>
+						<li>Wave (free)</li>
+						<li>Google Lighthouse (free)</li>
+						<li>Accessibility Insights (free)</li>
+						<li>Axe Dev Tools (freemium)</li>
+					</ul>
+
+					<aside class="notes">
+						<p>For some of you devs, rejoice. </p>
+						<p>Yes! You can do automated tests! </p>
+						<p>The beauty of these, is that it’s an accessible entry point into errors for any role. Design, QA, BA, and etc. </p>
+						<p>But unfortunately, there’s no one tool to rule them all. They’re all good at different things. But a generally good starting tools would be:</p>
+						<ul>
+							<li>Wave (free) - Browser extension. </li>
+							<li>See page structure at a quick glance. Switch off styles to see DOM order</li>
+							<li>Google Lighthouse (free) - Accessibility tab is available with Chrome</li>
+							<li>Accessibility Insights (free) - Browser extension</li>
+							<li>Axe Dev Tool (free) - Browser extension. </li>
+						</ul>
+						<p>Pro gives you more detailed and guided testing</p>
+						<p><strong>Beware:</strong></p>
+						<p>Only 30%-40% of the accessibility issues can be picked up by those automated tests.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>2. Audit - Manual</h2>
+
+					<ul>
+						<li>Keyboard testing</li>
+						<li>Color contrast testing </li>
+						<li>Screen reader testing</li>
+						<li>Cognitive testing</li>
+						<li>Mobile testing</li>
+					</ul>
+
+					<aside class="notes">
+						<p>You still need to go through manual test to test the experience in these lens</p>
+						<ul>
+							<li>Keyboard testing</li>
+							<li>Color contrast testing </li>
+							<li>Screen reader testing</li>
+							<li>Cognitive testing</li>
+							<li>Mobile testing</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section
+					data-background-iframe="https://www.a11yproject.com/checklist/" 
+					data-background-interactive
+				>
+					<aside class="notes">
+						<p>While going through manual testing, you'll need to get aquainted with WCAG guidelines</p>
+						<p>If yours is only an internal audit, or want to start small, try A11y Project's checklist.</p>
+						<p>It's by no means definitive, but should get you started on the basics of auditing</p>
+					</aside>
+				</section>
+
+				<section
+					data-background-iframe="https://www.w3.org/WAI/WCAG21/quickref/" 
+					data-background-interactive
+				>
+					<aside class="notes">
+						<p>If you need a serious audit however, head over to <strong>WCAG quick reference</strong>.</p>
+						<p>As you go through them in detail, setup or download audit spreadsheet so you can keep track of which guideline is what</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>2. Audit - Report</h2>
+
+					<ul>
+						<li>Blameless debrief session</li>
+						<li>Get stakeholders involved</li>
+						<li>What fail? What pass?</li>
+						<li>Why? Access needs impacted?</li>
+					</ul>
+
+					<aside class="notes">
+						<p>So, using the combination of tools to do your audit, you’ll generate a report.</p>
+						<p>It is easy to throw the final stats of </p>
+						<ul>
+							<li>x number of pages failing </li>
+							<li>x number of criterias, </li>
+						</ul>
+						<p>at the team and just leave it there for them to fix. </p>
+						<p>But what kind of reaction do you think the product team and management will have, </p>
+						<p>if you <strong>send them a huge list of failures</strong> in an email or a work messaging app? </p>
+						<p><strong>Panic and dread is all you’re going to get.</strong></p>
+						<p>Those are negative emotions which cause people to become less open to learning new things. </p>
+						<p>Exactly what you don’t want for the team,</p>
+						<p>who are about to embark upon a steep accessibility learning curve.</p>
+						<p>The key to managing that very human reaction, </p>
+						<p>is organising a debrief session with the team and stakeholders. Team, because they’re doing the work. Stakeholders, so they get a sense of how much work it’s going to be.</p>
+						<p>Like all good debriefs, it needs to be blameless. Stating only facts. </p>
+						<p>Summarise what are the critical fails, why they fail, and perhaps what kind of access needs those failures will disable. </p>
+						<p>Open the floor up to Q&A from team members. </p>
+						<p>There’s no better time for those not involved in the audit process to find out about WCAG criterias. Especially ones that failed, hence relevant to their work.</p>
+						<p>Alright, so we know what’s broken. </p>
+						<p><strong>How do we manage all the fixes?</strong></p>
+					</aside>
+				</section>
+
+				<section>
+					<h3 class="fragment" data-fragment-index="1">
+						<span class="fragment" data-fragment-index="3">🤯</span>
+						<br>
+						1.3.1 info and relationships</h3>
+
+					<p class="fragment" data-fragment-index="2">
+						Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.
+					</p>
+
+					<aside class="notes">
+						<p>It is extremely tempting to look at the report, </p>
+						<p>See this 1.3.1 Info and Relationships failure, </p>
+						<p>and write that as a task or a ticket,</p>
+						<p>then assign it straight to design or dev to fix. </p>
+						<hr>
+						<p>The problem with this approach of creating requirements, is this becomes a task to fix a specific error.</p>
+						<p>Take a look at what this criteria says...</p>
+						<hr>
+						<p>Took me a whole week of rereading over and over to understand that "Things should be properly related in code"</p>
+						<hr>
+						<p>There are 100s of ways to convey relationships between information, that could be mean: </p>
+						<ol>
+							<li>Ensuring that content under heading 2 actually belongs to that section of content</li>
+							<li>Ensure label for=”” and input id are the same, so that screen readers know which label describes which input field</li>
+							<li>Ensure that decorative image doesn’t get read out by screen readers</li>
+						</ol>
+						<p>Related list items just looks visually like a list, but is not marked up as ol or ul</p>
+						<p>Which means that the failure may have come from 10 problems on the same page, </p>
+						<p>or that one problem failed multiple other criterias. </p>
+						<p>WCAG success criteria and the fix is not a 1-1 relationship. </p>
+						<p>That’s a lot of redundant and duplicate admin work to create these types of error based tasks. </p>
+						<p>Some, only to be closed as soon as the first one went live, since it did fix 5 criterias. </p>
+						<p>Or some, taking so long to fix due to multiple problems causing that one criteria to fail. </p>
+						<p>Not Agile at all.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>3. Requirements - <br>User story</h2>
+
+					<ul>
+						<li>User goal</li>
+						<li>Impacted user (their access needs)</li>
+						<li>What does best UX look like?</li>
+					</ul>
+
+					<aside class="notes">
+						<p>My personal recommendation is to write them as user stories. </p>
+						<p>When writing a story, look at the failed criteria, and visualise how these criteria help users with different types of access needs. Useful questions to ask:</p>
+						<ul>
+							<li>What task is a user supposed to be able to accomplish in this page/component?</li>
+							<li>Which type of user are we disabling, if this failed WCAG/issue is not fixed?</li>
+							<li>What kind of strategy/tools would these users use to consume content?</li>
+							<li>What do we need to do to serve those users the best possible user experience?
+								<ul>
+									<li>What could go wrong?</li>
+									<li>Who could we be excluding?</li>
+									<li>How could this be misused?</li>
+								</ul>
+							</li>
+						</ul>
+						<p>Based on those answers, write tasks up as user stories. </p>
+						<p>This will give the team more information and guidance when looking for an appropriate solution and narrow down testing methods. </p>
+						<p>This makes it much easier for the team to deal with issues, and chip away at the errors.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>3. Requirements - Which tech?</h2>
+
+					<ul>
+						<li class="fragment" data-fragment-index="1">WebAIM’s annual survey</li>
+						<li class="fragment" data-fragment-index="2">Local advocates</li>
+						<li class="fragment" data-fragment-index="3">List ‘Tested with’ devices</li>
+					</ul>
+
+					<aside class="notes">
+						<p>Now, we can’t officially support every type of assistive tech under the sun.</p>
+						<p>We can’t own all possible types of devices, and train everyone to use them all proficiently.</p>
+						<p>Remember when responsive design was this new thing,</p>
+						<p>and we had to start making our product works in all sorts of devices and viewport sizes? </p>
+						<p>How did we decide what to give 10% support? </p>
+						<p>Most sold devices on the market, and top 95% of your product’s Google Analytics viewport stats.</p>
+						<p>Though we can’t rely on Google Analytics for assistive tech usage stats yet, </p>
+						<hr>
+						<p>we can look at WebAIM’s annual surveys in conjunction with stats from your local accessibility advocates. What is your local charity for different types of disabilities training their patrons to use? </p>
+						<p>Support those.</p>
+						<p>And if you’re feeling brave, list out device support or ‘tested with’ section for your product! </p>
+						<p>This could be a very helpful way to set expectations for people. </p>
+						<p>They definitely know if their chosen device should work with your content.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>4. Screen reader training</h2>
+
+					<ul>
+						<li>Everyone in the team</li>
+						<li class="muted">Divide and conquer</li>
+						<li class="muted">Share and celebrate learnings</li>
+					</ul>
+
+					<aside class="notes">
+						<p>Next is screen reader training</p>
+						<p>My friends, welcome, to a whole new world. </p>
+						<p>We’re going to have to start learning how to use only the keyboard to navigate, and how to use screen readers. It’s actually quite fun. Keep an open mind.</p>
+						<p>Why do we need to learn this? Wouldn’t clear headings and well designed content be enough?</p>
+						<p>Using a screen reader is a different experience. </p>
+						<p>A content first one.</p>
+						<p>So knowing how screen readers work will help you test your product as you develop. </p>
+						<p>Rather than waiting until the end stage usability testing to reveal where you went wrong. </p>
+						<p>Helps you be Agile!</p>
+						<p>My tip here is, that have every role in the team learn it.</p>
+						<p>BA, design, devs, and QAs. </p>
+						<p>Including other stakeholders might be a stretch. </p>
+						<p>But if you have the influence, do try.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>4. Screen reader training</h2>
+
+					<ul>
+						<li>Everyone in the team</li>
+						<li>Divide and conquer</li>
+						<li class="muted">Share and celebrate learnings</li>
+					</ul>
+
+					<aside class="notes">
+						<p>Divide and conquer. </p>
+						<p>Remember when I said that you should be gaining some accessibility champions after user stories or empathy workshop sessions? </p>
+						<p>This is when you get together, and split up the learning. </p>
+						<p>Not all screen readers work the same way. </p>
+						<p>Think iPhone vs Android. Or Mac vs PC. They’re all computers. But they’re slightly different.</p>
+						<p>Even the OS X and iOS version of VoiceOver by apple is different.</p>
+						<p>I’m on a Mac, so the natural screen reader to pick up is OS X VoiceOver (comes pre installed). </p>
+						<p>If you’re on a PC, NVDA is free, pick that up. </p>
+						<p>If your core user base is phones, iOS VoiceOver and Android Talkback will be what you should learn.</p>
+						<p>Learning these are especially interesting, because your smartphone is a flat piece of glass with almost no buttons. </p>
+						<p>So you use either gestures or voice to navigate.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>4. Screen reader training</h2>
+
+					<ul>
+						<li>Everyone in the team</li>
+						<li>Divide and conquer</li>
+						<li>Share and celebrate learnings</li>
+					</ul>
+
+					<aside class="notes">
+						<p>Once you’ve split up the learnings, try using a screen reader on the feature you’re actively working on, or only just delivered. </p>
+						<p>Share your learnings in mini sessions. </p>
+						<p>Get different people learning different screen readers to show you how their tool works. </p>
+						<p>Encourage, celebrate and reward their learnings. </p>
+						<p>There now, that’s a nice carrot.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>5. Design &amp; content</h2>
+
+					<ul class="fragment">
+						<li>What can I do?</li>
+						<li>Isn’t it all technical?</li>
+						<li>Will this restrict my creativity?</li>
+						<li>Do we need to cover all access needs?</li>
+					</ul>
+
+					<aside class="notes">
+						<p>So, like all product journeys, it start with design.</p>
+						<p>For a lot of designers, their questions around accessibility could be any, or all of these:</p>
+						<ul>
+							<li>Do I need to do anything if people are not navigating the product by sight?</li>
+							<li>Isn’t it all in technical implementation?</li>
+							<li>Will this restrict my creativity?</li>
+							<li>Do we need to design for all possible use cases? There’s so many!</li>
+						</ul>
+						<p>These are questions borne out of <strong>lack of experience with designing accessibility first</strong> products.</p>
+						<p>It’s fear of the unknown.</p>
+						<p>They might even be going through a design existential crisis. It’s ok.</p>
+						<p>Give them a hug, a hot beverage and some food. Tell them that you’re all in this new journey together.</p>
+						<p>On a serious note, first, I’d like to ask: <strong>What is your designer’s job title</strong>?</p>
+					</aside>
+				</section>
+
+				<section>
+					<h3>UX or Product designer<br>design experiences</h3>
+
+					<p class="fragment">Experiences ≠ visuals only</p>
+
+					<aside class="notes">
+						<p>If it’s UX designer or product designer, then their job is to <strong>design experiences</strong>. </p>
+						<p>An experience is not limited to pretty visuals. </p>
+						<p>Content first, and simple linear experience is more usable by all, </p>
+						<p>especially people who are not confident with technology, </p>
+						<p>or who are cognitively diverse. </p>
+						<p>By focusing on the content at the start, </p>
+						<p>you’re forced to consider non visual experiences. </p>
+						<p><strong>How to provide the best possible user experience?</strong></p>
+						<p>Use your creativity to career for more access needs.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h3>Design content &amp; mobile first</h3>
+
+					<p class="fragment">Focused &amp; linear experience is inclusive</p>
+
+					<aside class="notes">
+						<p>These things were best practices for a reason</p>
+						<p>By designing the most minimal linear experience, you make things clearer for users</p>
+						<p>Blind users don't care for the visuals?</p>
+						<p>Neurodiverse and tunnel vision users don't want multicolumn distracting layout, and out of context notification?</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>6. Testing &amp; development</h2>
+
+					<ul class="fragment">
+						<li>Isn’t the design system already accessible?</li>
+						<li>I don’t get HTML &amp; CSS!</li>
+						<li>Who tests what?</li>
+					</ul>
+
+					<aside class="notes">
+						<p>Now, let’s have a look at concerns around testing and development</p>
+						<p>If your product is using a pattern library or a design system, </p>
+						<p>check if it’s accessible out of the box</p>
+						<p>If no, talk to the creators. It might be the kind of feedback they’re looking for.</p>
+						<p>If it is accessible, check your implementation. Have you added in all the attributes they recommended?</p>
+						<p>Design systems are just a base for you to build experiences.</p>
+						<p>It’s your team and designer who put together the experience.</p>
+						<p>Try navigating through with only keyboard, then with screen readers.</p>
+						<p>If you haven’t already from the audit phase, integrate those automated tests to help monitor implementation.</p>
+						<p>While you’re doing all this, be mindful that</p>
+						<p>Not all developers are UI focused front end developers. </p>
+						<p>HTML & CSS isn’t usually taught in comp sci degrees. And it’s hardly a focus in bootcamps.</p>
+						<p>These days, pattern libraries make it easier than ever for devs to make a designed looking page without ever touching HTML and CSS. </p>
+						<p>So by needing to really look under the hood of these UI tools, they might be learning a whole new language, and could be experiencing imposter syndrome. </p>
+						<p>Please don’t go saying that HTML and CSS is basic. Hold their hands, and connect them with a kind front end dev.</p>
+						<p>And think back to testing early days of responsive design.</p>
+						<p>Both you and QAs were probably trying to test as many devices as you can in the beginning. Cause nothing was responsive</p>
+						<p>And later on, you know and have fixed enough to get a sense of what you need to specifically test in each phase.</p>
+						<p>As you and your QA gain more experience, it’s likely that devs will test on their preferred assistive tool, and QA run regression on the rest when it’s a new feature. </p>
+						<p>So it’s ok. It’s only a lot of work in the beginning.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>7. Verify the fixes</h2>
+
+					<ul class="fragment">
+						<li>Focused usability testing!</li>
+						<li>Audit round 2+</li>
+					</ul>
+
+					<aside class="notes">
+						<p>Mum! Are we there yet??!</p>
+						<p>No honey</p>
+						<hr>
+						<p>I know I wasn’t saying good things about usability testing before.</p>
+						<p>My problem was with mass testing, </p>
+						<p>just to generally check if you’re accessible, </p>
+						<p>and before your team learn about what accessibility is.</p>
+						<p>At this point, your team knows the work involved. You’ve up-skilled</p>
+						<p>This time the usability testing goal is to check the gaps in your knowledge, and figure out other ways to improve.</p>
+						<p>Hopefully, the results will allow your team, </p>
+						<p>to give yourselves nice big pat on the back</p>
+						<p>for a job well done.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Team needs</h2>
+					<p>Empathy, curiosity, patience, consistency, perseverance, inclusion</p>
+
+					<aside class="notes">
+						<p>I’ve spent 40+ minutes arming you with what a systematic cultural shift would look like, and what you’d expect to happen in each stage. </p>
+						<p>The last 2 phases will probably take at least 4-5 months fo teams to adjust.</p>
+						<p>That was a lot of content which you won’t remember.</p>
+						<p>But really, it all boils down to making the team think more deeply about different user needs,</p>
+						<p>Empathise and be curious about their experiences. </p>
+						<p>It’ll help inform what you need to do</p>
+						<p>Be patient with your team’s learning progress, </p>
+						<p>don’t beat yourself up when you hit another constraint or criteria, </p>
+						<p>but celebrate new learnings when you do.</p>
+						<p>Be consistent with your accessibility practice. </p>
+						<p>And keep at it until it become your team’s habit.</p>
+						<p>The last step though, is to include disabled people in your team, to truly be able to design inclusive experiences.</p>
+						<p>That’s how you’ll become accessible by default</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Thanks</h2>
+					<p>Questions? Feedback?!</p>
 					<p><small>Tweet me <a href="https://twitter.com/lackofcolours">@lackofcolours</a></small></p>
 				</section>
 			</main>
@@ -391,7 +965,7 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-				controls: false,
+				controls: true,
 				transition: 'none',
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
