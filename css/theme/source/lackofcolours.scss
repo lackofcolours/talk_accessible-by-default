@@ -21,7 +21,7 @@ $backgroundColor: #181E2B;
 $mainColor: #fff;
 $headingColor: #fff;
 
-$mainFontSize: 42px;
+$mainFontSize: 52px;
 $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
 $headingFont: 'Source Sans Pro', Helvetica, sans-serif;
 $headingTextShadow: none;
@@ -32,10 +32,10 @@ $linkColor: #8DFCE4;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
-$heading1Size: 2.5em;
-$heading2Size: 1.6em;
-$heading3Size: 1.3em;
-$heading4Size: 1.0em;
+$heading1Size: 2em;
+$heading2Size: 2em;
+$heading3Size: 1.6em;
+$heading4Size: 1.2em;
 
 section.has-light-background {
 	&, h1, h2, h3, h4, h5, h6 {
@@ -55,10 +55,15 @@ section.has-light-background {
 
 	h1 {
 		color: $linkColor;
+		margin-bottom: .5em;
 	}
 
 	bold {
 		font-weight: 600;
 		color: $linkColor;
+	}
+
+	small {
+		font-size: .7em;	
 	}
 }
