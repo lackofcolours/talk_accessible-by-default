@@ -51,11 +51,11 @@ section.has-light-background {
 .reveal {
 	h1, h2, h3 {
 		text-transform: none;
+		margin-bottom: .5em;
 	}
 
 	h1 {
 		color: $linkColor;
-		margin-bottom: .5em;
 	}
 
 	bold {
