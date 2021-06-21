@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="dist/theme/lackofcolours.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/a11y-dark.min.css" id="highlight-theme"> -->
 	</head>
 	<body>
 		<div class="reveal">
@@ -39,50 +39,325 @@
 						<p>Specialise in scalable CSS &amp; Semantic HTML for large scale sites.</p>
 						<p>Like Tourism New Zealand, and Xero's customer help portal.</p>
 						<p>Being in the front of front end, means I've always been interested in accessibility</p>
-						<hr>
-						<p>Let's do a classic show of hands!</p>
-						<p>So… Who here has heard of web accessibility?</p>
 					</aside>
 				</section>
 
 				<section>
-					<h2>Why?</h2>
+					<h2>🖖 hands up if...</h2>
 
-					<p>
-						<span class="fragment" data-fragment-index="1">Create <bold>empathy</bold></span>
-						<span class="fragment" data-fragment-index="2">and add <bold>context</bold></span>
+					<aside class="notes">
+						<p>Let's do a classic show of hands! Hands up if you...</p>
+						<ol>
+							<li>have <strong>heard</strong> of web accessibility</li>
+							<li>think you have <strong>implemented</strong> an accessible feature</li>
+							<li>have tried using only a keyboard to navigate and use a feature you’ve built</li>
+							<li>have any kind of experience, making or consuming an accessibility audit report</li>
+							<li>have tried using a desktop screen reader like JAWs, NVDA, or OS X VoiceOver</li>
+							<li>have watched an assistive tech user, be it 
+								<ul>
+									<li>screen reader user</li>
+									<li>400% zoom user</li>
+									<li>braille display user</li>
+									<li>Windows high contrast mode user</li>
+									<li>or others, use your featur</li>
+								</ul>
+							</li>
+						</ol>
+						<p>
+							If your answer to any of the last 3 questions was ‘no’... let me ask you again,<br>
+							Who thinks they have <strong>truly implemented an accessible feature</strong>? 
+						</p>
+						<p>Not even the whole product, just a feature?</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>It's ok... I get it</h2>
+
+					<p class="fragment" data-fragment-index="1">
+						🛠️ Lets fix it
 					</p>
 
 					<aside class="notes">
-						<p>UX spend all the time empathising with customers, yet not to their own devs</p>
-						<p>Last job, I worked in a service design agency. Seen difference when devs were and were not involved early</p>
-						<p>As a dev, I've grown. Changed the way I approach a problem</p>
-						<p>Once we've experienced this, if done right, the benefit is undeniable</p>
-						<p>Lately feels far away from my users. Given task, and no real user context</p>
+						<p>I suspect that... not many of us have.</p>
+						<p>But if you’re making the time to watch my talk, then you’re interested in being able to one day say</p>
+						<p>“Yeah! I know that my product is accessible” with conviction.</p>
+						<hr>
+						<p>Hopefully, this will give you an overview of what it really takes,<br> to bake digital accessibility into your delivery team’s workflow.</p>
 					</aside>
 				</section>
 
 				<section>
-					<h2>When?</h2>
+					<h2>⚠️ Disclaimer</h2>
 					
-					<img class="stretch"
-							src="img/ux-ui-flow.png"
-							alt="UX-UI flow by Fen https://medium.com/nyc-design/ux-ui-design-process-for-beginner-753952bb2241">
+					<p>These are my personal views and I’m still learning</p>
 
 					<aside class="notes">
-						<p>How early should devs be involved? Depends</p>
-						<p>What kind of project? Is it a technical solution? Or is it a brochureware site?</p>
-						<p>Problem statements can be shared early</p>
-						<p>User research sessions can have devs join in</p>
-						<p>Data intensive projects can benefit from Dev wireframing. Yes UXers can do it with Axure, but devs don't have time to think about data models</p>
+						<p>This is my personal take on creating a more accessibility minded delivery team.</p>
+						<p>Also, I’m still early into my accessibility journey. I’m only covering the context of web accessibility today, because it’s a web tech talk.</p>
+						<p>There will be things I say that might offend people in the community because I’m still learning.</p>
+						<p>Any feedback on how I can improve is welcomed, especially language used!</p>
 					</aside>
 				</section>
 
 				<section>
-					<h2>How?</h2>
+					<h2 class="fragment" data-fragment-index="1">😑 😱 🤩</h2>
+					
+					<p class="fragment" data-fragment-index="1">Common reactions to<br><strong>accessibility project</strong></p>
+
+					<aside class="notes">
+						<p>Ok, admin, ticked. Let's imagine this:</p>
+						<p>At your team meeting, your product manager said</p>
+						<p>“Alright team, we must make our web product accessible in 12 months, starting tomorrow</p>
+						<p>You looked around the room, and there were varying reactions...</p>
+						<hr>
+						<p>From <strong>confusion</strong> by people who don't even know what accessibility is...</p>
+						<p>to <strong>dread</strong> by people who have heard that it’s a lot of work…</p>
+						<p>to <strong>excitement</strong> by people who have been interested in accessibility since forever…</p>
+						<p>Everyone is asking or thinking <br>“What have we just gotten ourselves into?<br>Why are we being asked to do this?”</p>
+						<p>Before we go into the why...</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>What is<br>web accessibility?</h2>
+					
+					<p span class="fragment" data-fragment-index="1">
+						Inclusion and access to <br><strong>information</strong> 
+						and <strong>services</strong>
+					</p>
+
+					<aside class="notes">
+						<p>I love digital.govt.nz‘s explanation:</p>
+						<p>Web accessibility is about inclusion — making sure everyone, including disabled people and those using assistive technologies, can access online information and services.</p>
+						<p>So what this is saying, people need to be able to access and use the web. </p>
+						<p>Why is it important that everyone have access? Because</p>
+						<p><storng>Information</storng> leads to knowledge. Knowledge empowers to people</p>
+						<p>What about <storng>services</storng>? Services enable users to achieve their goal</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>How is <br>web = accessible?</h2>
+					
+					<p span class="fragment" data-fragment-index="1">
+						<strong>Hyper Text Markup Language</strong><br>
+						🤍  HTML
+					</p>
+
+					<aside class="notes">
+						<p>How were these information and services made accessible?</p>
+						<p>By using declarative programming languages like Hyper Text Markup Language (HTML)</p>
+						<p>HTML is a way to give meaning to text content!</p>
+						<p>Why is HTML accessible?</p>
+						<p>Being a declarative language by nature, it was designed to be mostly backward compatible, and simpler to use for developers/content creators.</p>
+						<p>It’s also standardised so any browser can interpret and render it...</p>
+						<p>Yes, even your smart fridge’s browser.</p>
+						<p>It might not know how to render JavaScript or even Cascading Style Sheets, but it sure knows how to render HTML.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Who is web accessibility for?</h2>
+					
+					<p span class="fragment" data-fragment-index="1">
+						🤍  Everyone
+					</p>
+
+					<aside class="notes">
+						<p>Who’s all this work for?</p>
+						<p>If you’ve been listening, or have used the internet lately, that’s technically everyone.</p>
+						<hr>
+						<p>It IS the purpose of the web. Well coded products with HTML, CSS, and JS enable users to access web content.</p>
+						<p>If the web was coded in a non-standard way, our laptops, phone, and smart toaster browser will not be able to render the content for us to consume well. </p>
+						<p>It slightly disables or hinders our ability to use the web.</p>
+						<p>But meaningless HTML, hiding content via CSS, and blocking JS can be especially <strong>disabling for the disabled communities</strong>.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>
+						“Disabled”<br>
+						communities
+					</h2>
+					
+					<p span class="fragment" data-fragment-index="1">
+						Permanent, temporary, situational
+					</p>
+
+					<aside class="notes">
+						<p>When I started learning about disability, I was so scared of referring to someone as “disabled”. </p>
+						<p>Is that an offensive way to refer to a group?</p>
+						<p>But after talking to advocates, reading user stories, and watching demos, I realised no, “disabled people” is exactly what we should be using.</p>
+						<p>It’s <strong>social model of disability</strong>, which is especially relevant when us creators create things for people to use.</p>
+						<hr>
+						<ul>
+							<li>A <strong>blind</strong> person can be disabled from using a site that isn’t well designed for screen readers.</li>
+							<li>A <strong>wheel chair rider</strong> post hip surgery can be disabled by narrow groceries self checkout.</li>
+							<li>A person <strong>cooking with dirty hands</strong> could be disabled from using recipe software if it doesn’t allow for voice dictation.</li>
+							<li>A person with <strong>severe ADHD</strong> was disabled from finding product information, because of heavy use of distracting looping animations in the marketing site.</li>
+						</ul>
+						<p>In all of these usage of the term “disabled”, you’ll notice that it’s how the technologies have been designed that disbled and barred users with different access needs from helping themselves. </p>
+						<p>By not considering, or designing with these users, design stops these communities from becoming independent.</p>
+						<p>It is the creators saying: <strong>The problem is with you, not the tool</strong>.</p>
+						<p>Wow, what a way to create an inclusive world.</p>
+						<p>It’s especially scary to think about, when anyone can become ‘disabled’ at any point in their lives.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2 span class="fragment" data-fragment-index="1">
+						🪄 Assistive tech
+					</h2>
+
+					<aside class="notes">
+						<p>So, how do these people with access needs consume the web? </p>
+						<p>They use assistive technologies!</p>
+						<hr>
+						<p>There are many many types of assistive technologies to serve people with <strong>different access needs</strong>.</p>
+						<p>A disabled user may adopt different strategies to access content, which could use a variety of tools. </p>
+						<p>Example of the most common tools out there:</p>
+					</aside>
+				</section>
+
+				<section
+					data-transition-speed="fast" 
+					data-background-image="https://blog.davidkind.com/wp-content/uploads/2019/08/2020-eyewear-eyeglass-color-style-trends-david-kind.jpg">
+					<aside class="notes">
+						<p>1. Glasses</p>
+						<p>Oh yes, what I’m wearing now is an assistive tech. </p>
+						<p>In fact, one of the most common and oldest forms still in use today!</p>
+						<p>I wear it so that I can read content without the aid of other people. </p>
+						<p>Useful for working out if I need to say hi to someone walking towards me.</p>
+						<p>Now, lets move a little closer to other tech which helps users in the digital era.</p>
+					</aside>
+				</section>
+
+				<section
+					data-transition-speed="fast" 
+					data-background-image="https://www.windowscentral.com/sites/wpcentral.com/files/styles/xlarge_wm_brw/public/field/image/2015/08/magnifier-lens-scn.jpg">
+					<aside class="notes">
+						<p>2. Screen Magnification</p>
+						<p>No, not just Control + to zoom into different apps or documents.</p>
+						<p>But the whole computer could be zoomed in. </p>
+						<p>Users with low or tunnel vision, need to be able to consistently view the whole computer in predictable ways. Page reflows when you just zoom into specific app don't really help with that.</p>
+						<p>And marvel at how some multi column apps just aren’t usable this way. </p>
+						<p>Remember that content writing guideline of no more than 8-12 sentences in one line? </p>
+						<p>Yeah, these users especially need that to happen. </p>
+						<p>And single column layout with all important functions on the left for L-to-R language speakers. </p>
+						<p>Wow single column layout has never been so important.</p>
+					</aside>
+				</section>
+
+				<section
+					data-transition-speed="fast" 
+					data-background-image="https://winbuzzer.com/wp-content/uploads/2019/03/chromium-edge-high-contast-mode-696x392.jpg.webp">
+					<aside class="notes">
+						<p>3. High contrast mode</p>
+						<p>What it says on the tin. </p>
+						<p>This is how the users who struggle with shades of grey designs use to cope. </p>
+						<p>Since they’ve felt they can’t rely on the site creators to provide an accessible colour palette for them.</p>
+						<p>This means the colours could be inverted automatically. Images without contrast alternatives could blur into the background.</p>
+					</aside>
+				</section>
+
+				<section
+					data-transition-speed="fast" 
+					data-background-image="https://www.rnib.org.uk/sites/default/files/IMG_2473.jpg">
+					<aside class="notes">
+						<p>4. Refreshable Braille display</p>
+						<p>Watching someone use one of these was so magical. </p>
+						<p>A deaf and blind user can plug these braille displays into their computer or phone, and it translate what screen readers read out into braille!</p>
+						<p>A lot of these readers have amazing shortcuts. Advance users can type whole paragraphs purely with a couple of keystrokes!!!</p>
+						<p>Since we know almost definitely that braille users can’t see, it’s more important than ever to make sure everything has a text description, and is in logical order, so that it is easy to understand when read in order.</p>
+					</aside>
+				</section>
+
+				<section
+					data-transition-speed="fast" 
+					data-background-image="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/Catalina/macos-catalina-voice-control-photos-grid-overlay.jpg">
+					<aside class="notes">
+						<p>Last - Voice Dictation</p>
+						<p>You know when you tell Alexa or Siri to do stuff? </p>
+						<p>That’s a kind of voice dictation tool. </p>
+						<p>There are others, like Dragon Naturally Speaking and Mac Voice Command, </p>
+						<p>which let users who can’t or don't want to type, </p>
+						<p>interact with the whole OS by voice. </p>
+						<p>Imagine going on a shopping site and doing hands free shopping by saying ‘Click buy banana?</p>
+						<p>In this screenshot, I can say number of the grid on the screen, to zoom into, or select that area</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Assistive tech</h2>
+					
+					<p span class="fragment" data-fragment-index="1">
+						🤍  HTML
+					</p>
+
+					<aside class="notes">
+						<p>How do most of these magical tools allow users to access web products?</p>
+						<p>HTML, CSS, and JS my friends. Plain and simple. </p>
+						<p>Marking up what the page is about as <code>&lt;h1&gt;</code>, marking something users can interact with as <code>&lt;button&gt;</code>, marking links to different urls as <code>&lt;a&gt;</code>, and etc. all make your content accessible to these tools.</p>
+					</aside>
+				</section>
+
+				<section>
+					<pre>
+						<code data-trim data-noescape>
+							import React from 'react';
+							import { Button } from '@a-ui-library;
+
+							function App() {
+								return &lt;Button color="primary"&gt;Shop now&lt;/Button&gt;;
+							}
+						</code>
+					</pre>
+					
+					<p span class="fragment" data-fragment-index="1">
+						<strong>Did you just disable somone?</strong></br>
+						Check your HTML output
+					</p>
+
+					<aside class="notes">
+						<p>Think about what you coded recently. </p>
+						<p>Most of us are living in JS => HTML world. Coding mostly in JS, and outputting HTML. </p>
+						<p>Have you thought about what your plain HTML output means to users? </p>
+						<p>Taking all the styles and JS interactivity away, does your HTML have meaning?</p>
+						<p><strong>Did the HTML you output recently empower users, and enable them to do or find what they want?</strong></p>
+						<p>Alright, you might be thinking, I get it. Check my HTML. But is that all?</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Are you accessible?</h2>
 
 					<ul>
-						<li class="fragment" data-fragment-index="1">Ask</li>
+						<li class="fragment" data-fragment-index="1">Ask users <span class="fragment" data-fragment-index="2">🤑</span></li>
+						<li class="fragment" data-fragment-index="3">Web Content Accessibility Guidelines (WCAG)</li>
+					</ul>
+
+					<aside class="notes">
+						<p>How do we definitely know if our product is accessible?</p>
+						<p>There are a few ways. We could...</p>
+						<hr>
+						<p>Ask users</p>
+						<p>Yeah sure… one concrete way to find out is mass usability testing with real users.</p>
+						<p>They tell you if your stuff is not usable!</p>
+						<hr>
+						<p>But! Usability testing at this point is a waste of time and money. Like all good research, you need to narrow down your problems</p>
+						<p>Normal controlled sample size usability testing session is already a labour intensive process.</p>
+						<p>Testing now, is like asking a user, is my app usable? There are more affordable ways</p>
+						<hr>
+						<p>That’s where Web Content Accessibility Guidelines come in.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>lots of fragment</h2>
+
+					<ul>
+						<li class="fragment">Ask</li>
 						<li class="fragment" data-fragment-index="2">Align test session with appropriate dev</li>
 						<li class="fragment" data-fragment-index="3">Roster devs</li>
 						<li class="fragment" data-fragment-index="4">Turn them into observers and/or note taker</li>
@@ -99,43 +374,9 @@
 				</section>
 
 				<section>
-					<h2>Why not simply share finding?</h2>
-					<p class="fragment" data-fragment-index="1">It's an investment in your developers, and the team</p>
-
-					<aside class="notes">
-						<p>Only sharing findings is like telling GoT beginning, and explain the ending</p>
-						<p>A dev who see users right click, will remember to markup links correctly</p>
-						<p>Small dev decisions are made without UX knowing. Database structure, allow scroll in iOS, how iframe gets put together and etc.</p>
-						<p>A dev who have witness his/her take 10 seconds to load during a session, is more likely to be on board with performance projects</p>
-						<p>Remind eachother of the experiences we've shared</p>
-					</aside>
-				</section>
-
-				<section>
-					<h2>UX is a journey</h2>
-					<p class="fragment" data-fragment-index="1">
-						Best experience for developers <br>
-						=<br>
-						Best experience for users</p>
-				</section>
-
-				<section>
-					<h2>What next?</h2>
-					<p class="fragment" data-fragment-index="1">
-						UXer, go talk to your devs <br>
-						Devs, ask to be involved
-					</p>
-					<aside class="notes">
-						<p>Homework!</p>
-						<p>UXer, find a dev. Dev, find UXer. Now talk about how you'd like to work with eachother</p>
-						<p>We've turned UI into UX Designers through involvement in research. Lets Devs into UX Devs too</p>
-					</aside>
-				</section>
-
-				<section>
 					<h2>Thanks!</h2>
 					<p>Questions?</p>
-					<p><small>Tweet me <a href="https://twitter.com/lackofcolours" alt="Link to Prae Songprasit's twitter">@lackofcolours</a></small></p>
+					<p><small>Tweet me <a href="https://twitter.com/lackofcolours">@lackofcolours</a></small></p>
 				</section>
 			</main>
 		</div>
