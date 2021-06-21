@@ -65,6 +65,9 @@ section.has-light-background {
 
 	.code-wrapper {
 		width: 100%;
-		overflow: hidden;
+		
+		code {
+			overflow-x: hidden;
+		}
 	}
 }
