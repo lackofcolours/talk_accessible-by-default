@@ -1,4 +1,6 @@
-# Accessible by default: How to get there, and make it last?
+# Accessible by default
+
+How to get there, and make it last?
 
 JS is exciting & full of possibilities. But we often forget the web’s core: accessibility. 
 
@@ -11,8 +13,7 @@ This 45mins talk was prepared for:
 
 ## Viewing
 
-The slides can be viewed on:
-
+The slides can be viewed on: https://lackofcolours.github.io/talk_accessible-by-default
 
 To view slide notes, open the slide and press the `s` key.
 
