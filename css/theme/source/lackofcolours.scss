@@ -12,16 +12,16 @@
 
 
 // Include theme-specific fonts
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #181E2B;
 
-$mainColor: #fff;
-$headingColor: #fff;
+$mainColor: #F1FEFB;
+$headingColor: #8DFCE4;
 
-$mainFontSize: 52px;
+$mainFontSize: 58px;
 $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
 $headingFont: 'Source Sans Pro', Helvetica, sans-serif;
 $headingTextShadow: none;
@@ -32,9 +32,9 @@ $linkColor: #8DFCE4;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
-$heading1Size: 2em;
+$heading1Size: 1.8em;
 $heading2Size: 2em;
-$heading3Size: 1.6em;
+$heading3Size: 1.4em;
 $heading4Size: 1.2em;
 
 section.has-light-background {
@@ -54,16 +54,16 @@ section.has-light-background {
 		margin-bottom: .5em;
 	}
 
-	h1 {
-		color: $linkColor;
-	}
-
-	bold {
-		font-weight: 600;
-		color: $linkColor;
+	bold, strong {
+		font-weight: 700;
+		-webkit-font-smoothing: antialiased;
 	}
 
 	small {
 		font-size: .7em;	
+	}
+
+	.code-wrapper {
+		width: 100%
 	}
 }
