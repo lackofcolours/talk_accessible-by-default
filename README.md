@@ -13,7 +13,7 @@ This 45mins talk was prepared for:
 
 ## Viewing
 
-The slides can be viewed on: https://lackofcolours.github.io/talk_accessible-by-default
+The slides can be viewed on: https://praesongprasit.github.io/talk_accessible-by-default
 
 To view slide notes, open the slide and press the `s` key.
 
